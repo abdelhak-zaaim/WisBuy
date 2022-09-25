@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageViewProductImage"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/notfound_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HandiCraft Product"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewProductResellerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Sold By Imgautam"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewProductStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Only 3 units in stock"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewProductTotalAmt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="Rs.20000"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+                    <!--  <TextView
+                    android:visibility="gone"
+                        android:id="@+id/textInputEditTextProductMRP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Rs. 500000"
+                        android:textSize="16sp"/>
+            -->
+                    <TextView
+                        android:id="@+id/textViewProductDiscount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="65% Off"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <!--       <TextView
+                             android:visibility="gone"
+                             android:id="@+id/textViewProductDiscount1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginRight="10dp"
+                             android:text="65% Off"
+                             android:textColor="@android:color/holo_green_dark"
+                             android:textSize="18sp"/>-->
+                    <Button
+                        android:id="@+id/buttonProductQuantityMinus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/quantity_btn_bg"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/textViewProductQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="1"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/buttonProductQuantityPlus"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/quantity_btn_bg"
+                        android:text="+" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonMoveToWishListCartItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cart_item_btn_wish_bg"
+                android:drawableLeft="@drawable/ic_favorite_black_24dp"
+
+                android:drawableStart="@drawable/ic_favorite_black_24dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="Move to Wishlist"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonRemoveCartItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cart_item_btn_remove_bg"
+                android:drawableLeft="@drawable/ic_delete_black_24dp"
+                android:drawableStart="@drawable/ic_delete_black_24dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="20dp"
+                android:text="Remove"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

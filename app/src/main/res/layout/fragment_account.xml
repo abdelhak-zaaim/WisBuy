@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".fragments.AccountFragment">
+
+  <include
+    android:id="@+id/toolbarAccountFragment"
+    layout="@layout/app_bar"
+    />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <android.support.v7.widget.CardView
+        app:cardCornerRadius="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+          android:background="@color/colorPrimary"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:orientation="vertical">
+          <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageViewUserProfilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_user"/>
+          <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imgautam"
+            android:textSize="20sp"/>
+          <TextView
+            android:id="@+id/textViewUserEmail"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="gautam.thapa22@gmail.com"
+            android:textSize="18sp"/>
+        </LinearLayout>
+      </android.support.v7.widget.CardView>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <Button
+          android:id="@+id/buttonOrders"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start"
+          android:background="@android:color/transparent"
+          android:drawableLeft="@drawable/purchase_order_grey"
+          android:drawablePadding="10dp"
+          android:drawableStart="@drawable/purchase_order_grey"
+          android:text="My Orders"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textSize="18sp"/>
+
+        <Button
+          android:id="@+id/buttonWishList"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_gravity="start"
+          android:background="@android:color/transparent"
+          android:drawableLeft="@drawable/ic_favorite_black_24dp"
+          android:drawablePadding="10dp"
+          android:drawableStart="@drawable/ic_favorite_black_24dp"
+          android:text="My Wishlist"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textSize="18sp"/>
+
+        <Button
+          android:id="@+id/buttonCart"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_gravity="start"
+          android:background="@android:color/transparent"
+          android:drawableLeft="@drawable/ic_shopping_cart"
+          android:drawablePadding="10dp"
+          android:drawableStart="@drawable/ic_shopping_cart"
+          android:text="My Cart"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textSize="18sp"/>
+
+        <Button
+          android:id="@+id/buttonUserProfile"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_gravity="start"
+          android:background="@android:color/transparent"
+          android:drawableLeft="@drawable/ic_person"
+          android:drawablePadding="10dp"
+          android:drawableStart="@drawable/ic_person"
+          android:text="My Profile"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textSize="18sp"/>
+
+        <Button
+          android:id="@+id/buttonUserAddress"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_gravity="start"
+          android:background="@android:color/transparent"
+          android:drawableLeft="@drawable/address"
+          android:drawablePadding="10dp"
+          android:drawableStart="@drawable/address"
+          android:text="My Address"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textSize="18sp"/>
+
+        <Button
+          android:id="@+id/buttonSellWithUs"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_gravity="start"
+          android:background="@android:color/transparent"
+          android:drawableLeft="@drawable/sell"
+          android:drawablePadding="10dp"
+          android:drawableStart="@drawable/sell"
+          android:text="Sell With us"
+            android:visibility="gone"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textSize="18sp"/>
+
+        <Button
+          android:layout_marginBottom="20dp"
+          android:id="@+id/buttonLogout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:layout_gravity="start"
+          android:background="@android:color/transparent"
+          android:drawableLeft="@drawable/logout"
+          android:drawablePadding="10dp"
+          android:text="Logout"
+          android:textAlignment="textStart"
+          android:textAllCaps="false"
+          android:textSize="18sp"
+            android:drawableStart="@drawable/logout" />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+
+</LinearLayout>

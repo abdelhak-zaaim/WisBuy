@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "911040256383",
+    "project_id": "wisybuy",
+    "storage_bucket": "wisybuy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911040256383:android:f49d5461db00365c24e24a",
+        "android_client_info": {
+          "package_name": "com.strontech.imgautam.handycaft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911040256383-9iufdv5n4j9537ds731s75afceatg0ed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmo2kGPusvl-2jsnBc5m-km_knufNlZs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911040256383-9iufdv5n4j9537ds731s75afceatg0ed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
